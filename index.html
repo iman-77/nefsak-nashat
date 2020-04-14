@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>حق الاخوة فى الإسلام</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+button {
+	display:block;
+	margin:2em auto;
+}
+
+.row{
+	margin-bottom:1em;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-2"> <img src="images/logo.png" class="img-fluid m-2" /> </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm"> <img src="images/1.jpg" data-swap="images/adl.jpg" class="img-fluid"/> 
+      <!-- <button class="delete btn-link" type="button">Delete</button>--> 
+    </div>
+    <div class="col-sm"> <img src="images/2.jpg" data-swap="images/soror.jpg" id="2" class="img-fluid"/> </div>
+    <div class="col-sm"> <img src="images/3.jpg" data-swap="images/hedeya.jpg" id="3" class="img-fluid"/> </div>
+  </div>
+  <!-- start row 2 -->
+  
+  <div class="row">
+    <div class="col-sm"> <img src="images/4.jpg" data-swap="images/adl.jpg" class="img-fluid"/> 
+      <!-- <button class="delete btn-link" type="button">Delete</button>--> 
+    </div>
+    <div class="col-sm"> <img src="images/5.jpg" data-swap="images/aiada.jpg" id="2" class="img-fluid"/> </div>
+    <div class="col-sm"> <img src="images/6.jpg" data-swap="images/doaa.jpg" id="3" class="img-fluid"/> </div>
+  </div>
+  
+  <!-- start row 3 -->
+  
+  <div class="row">
+    <div class="col-sm"> <img src="images/7.jpg" data-swap="images/salam.jpg" class="img-fluid"/> 
+      <!-- <button class="delete btn-link" type="button">Delete</button>--> 
+    </div>
+    <div class="col-sm"> <img src="images/8.jpg" data-swap="images/aiada-d.jpg" id="2" class="img-fluid"/> </div>
+    <div class="col-sm"> <img src="images/9.jpg" data-swap="images/doaa-d.jpg" id="3" class="img-fluid"/> </div>
+  </div>
+  <!-- start row 4 -->
+  <div class="row">
+    <div class="col-sm"> <img src="images/10.jpg" data-swap="images/adl-d.jpg" class="img-fluid"/> 
+      <!-- <button class="delete btn-link" type="button">Delete</button>--> 
+    </div>
+    <div class="col-sm"> <img src="images/11.jpg" data-swap="images/korba-d.jpg" id="2" class="img-fluid"/> </div>
+    <div class="col-sm"> <img src="images/12.jpg" data-swap="images/hedeya-d.jpg" id="3" class="img-fluid"/> </div>
+  </div>
+  <!-- start row 5 -->
+  <div class="row">
+    <div class="col-sm-4"> <img src="images/13.jpg" data-swap="images/salam-d.jpg" class="img-fluid"/> 
+      <!-- <button class="delete btn-link" type="button">Delete</button>--> 
+    </div>
+    <div class="col-sm-4"> <img src="images/14.jpg" data-swap="images/aiada-d.jpg" id="2" class="img-fluid"/> </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+<script language="javascript">
+$(document).ready(
+	$('img').click(function(){
+		var _this = $(this);
+		var current = _this.attr("src");
+		var swap = _this.attr("data-swap");
+		_this.attr('src',swap).attr('data-swap',current);
+	})	
+)
+
+$(document).on('click', '.delete', function () {
+    $(this).siblings().hide();
+	$(this).hide();
+});
+
+</script>
+</body>
+</html>
