@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript">
+        function swapImage(){
+            if (document.getElementById("pic").src.endsWith('present1.jpg') == true)  //Comparison
+            { 
+                 document.getElementById("pic").src = "images/hand.png"; //assignment  
+
+             } 
+             else if (document.getElementById("pic").src.endsWith('xyz.png') == true) 
+             { 
+                document.getElementById("pic").src = "abc.png"; 
+                
+            }
+        }
+    </script>
+
+
+    <img src="images/present1.jpg" id="pic" onclick="swapImage()"/>
+
+
